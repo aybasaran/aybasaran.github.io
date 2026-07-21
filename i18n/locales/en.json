@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "experience": "Experience",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "bio": "I've been building for the web for 4+ years. I like getting my hands on every layer, from the UI to APIs to the database. The best part is still turning an idea into something that actually works.",
+    "cv": "Download CV",
+    "location": "Balıkesir, Türkiye"
+  },
+  "sections": {
+    "experience": "EXPERIENCE",
+    "skills": "SKILLS",
+    "education": "EDUCATION",
+    "languages": "LANGUAGES"
+  },
+  "jobs": {
+    "apprecode": {
+      "dates": "2024 — Present",
+      "desc": "CRM, investment back-office and dashboard apps with Nuxt 3/4; advanced data visualization with ECharts, Highcharts and TradingView."
+    },
+    "madde22": {
+      "dates": "2023 — 2024",
+      "desc": "RESTful APIs with NestJS & Django on PostgreSQL & Redis; search with Elasticsearch & Meilisearch."
+    },
+    "yuix": {
+      "dates": "2022 — 2023",
+      "desc": "SSR websites with Django & Next.js; React UIs styled with TailwindCSS."
+    }
+  },
+  "education": {
+    "school": "Balıkesir University",
+    "degree": "B.Sc. Computer Engineering"
+  },
+  "languages": {
+    "turkish": "Turkish",
+    "native": "Native",
+    "english": "English"
+  },
+  "theme": "Toggle theme",
+  "langLabel": "Language"
+}

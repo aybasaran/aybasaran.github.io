@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "experience": "Deneyim",
+    "skills": "Yetenekler",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "bio": "4+ yıldır web geliştiriyorum. Arayüzden API'ya, veritabanından yayına kadar işin her katmanıyla uğraşmayı seviyorum. En keyifli kısmı da bir fikri gerçekten çalışan bir ürüne dönüştürmek.",
+    "cv": "CV indir",
+    "location": "Balıkesir, Türkiye"
+  },
+  "sections": {
+    "experience": "DENEYİM",
+    "skills": "YETENEKLER",
+    "education": "EĞİTİM",
+    "languages": "DİLLER"
+  },
+  "jobs": {
+    "apprecode": {
+      "dates": "2024 — Bugün",
+      "desc": "Nuxt 3/4 ile CRM, yatırım back-office ve dashboard uygulamaları; ECharts, Highcharts ve TradingView ile gelişmiş veri görselleştirme."
+    },
+    "madde22": {
+      "dates": "2023 — 2024",
+      "desc": "NestJS & Django ile RESTful API'lar; PostgreSQL & Redis, Elasticsearch & Meilisearch ile arama."
+    },
+    "yuix": {
+      "dates": "2022 — 2023",
+      "desc": "Django & Next.js ile SSR siteler; TailwindCSS ile React arayüzleri."
+    }
+  },
+  "education": {
+    "school": "Balıkesir Üniversitesi",
+    "degree": "Bilgisayar Mühendisliği (Lisans)"
+  },
+  "languages": {
+    "turkish": "Türkçe",
+    "native": "Anadil",
+    "english": "İngilizce"
+  },
+  "theme": "Tema değiştir",
+  "langLabel": "Dil seçimi"
+}
