@@ -34,3 +34,4 @@ Single-page personal site (CV/portfolio): Nuxt 4 + Nuxt UI 4 + @nuxtjs/i18n, sta
 - ESLint stylistic rules come from `nuxt.config.ts` (`eslint.config.stylistic`): no trailing commas, 1tbs braces.
 - Dependencies are pinned exactly (`savePrefix: ''` in `pnpm-workspace.yaml`) and gated by `minimumReleaseAge`; Renovate handles updates. Don't add version ranges.
 - `pnpm-workspace.yaml` `allowBuilds` explicitly disables all postinstall build scripts — new deps needing build scripts must be added there deliberately.
+- Never commit or push. Leave changes in the working tree; the user commits.

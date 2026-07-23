@@ -10,17 +10,15 @@ const jobs = [
     key: 'madde22',
     role: 'Backend Developer',
     company: 'Madde22',
-    projects: ['Turkcell Trivia Euro 2024', 'Paraşüt Mikrogroup', 'Deris Hukuk', 'Hillside Beach Club']
+    projects: ['Turkcell Trivia Euro 2024', 'Turkcell Ekranım BYS', 'Paraşüt Mikrogroup', 'Deris Hukuk', 'Hillside Beach Club', 'Maksimum Uniq']
   },
   {
     key: 'yuix',
     role: 'Full-Stack Developer',
     company: 'Yuix Networks',
-    projects: ['Turkey Tour Organizer', 'Turkcell Ekranım BYS', 'Estetic Hair Turkey', 'Maksimum Uniq']
+    projects: ['Turkey Tour Organizer', 'Estetic Hair Turkey']
   }
 ]
-
-const skills = ['Vue / Nuxt', 'TypeScript', 'NestJS', 'Django', 'PostgreSQL', 'Redis', 'TailwindCSS', 'Docker', 'Google Cloud']
 </script>
 
 <template>
@@ -116,26 +114,6 @@ const skills = ['Vue / Nuxt', 'TypeScript', 'NestJS', 'Django', 'PostgreSQL', 'R
         </article>
       </section>
 
-      <section
-        id="yetenekler"
-        class="mt-11 scroll-mt-6"
-      >
-        <h2 class="mb-4 text-[11px] font-bold tracking-[0.13em] text-dimmed">
-          {{ $t('sections.skills') }}
-        </h2>
-        <div class="flex flex-wrap gap-2">
-          <UBadge
-            v-for="skill in skills"
-            :key="skill"
-            color="neutral"
-            variant="outline"
-            class="rounded-lg bg-elevated px-3.25 py-1.75 text-[13px] font-semibold text-default ring-default"
-          >
-            {{ skill }}
-          </UBadge>
-        </div>
-      </section>
-
       <div class="mt-11 flex flex-wrap gap-12">
         <section class="min-w-65 flex-1">
           <h2 class="mb-3 text-[11px] font-bold tracking-[0.13em] text-dimmed">
@@ -146,6 +124,12 @@ const skills = ['Vue / Nuxt', 'TypeScript', 'NestJS', 'Django', 'PostgreSQL', 'R
           </div>
           <div class="mt-0.5 text-[13px] text-muted">
             {{ $t('education.degree') }} · 2016 — 2021
+          </div>
+          <div class="mt-3 text-[14.5px] font-semibold">
+            {{ $t('education.highSchool') }}
+          </div>
+          <div class="mt-0.5 text-[13px] text-muted">
+            {{ $t('education.highSchoolDegree') }} · 2011 — 2015
           </div>
         </section>
         <section class="min-w-65 flex-1">
@@ -182,6 +166,12 @@ const skills = ['Vue / Nuxt', 'TypeScript', 'NestJS', 'Django', 'PostgreSQL', 'R
           target="_blank"
           class="hover:text-primary"
         >in/aybasaran</ULink>
+        <ULink
+          raw
+          to="https://www.instagram.com/aybasaran10"
+          target="_blank"
+          class="hover:text-primary"
+        >@aybasaran</ULink>
       </div>
     </footer>
   </UContainer>

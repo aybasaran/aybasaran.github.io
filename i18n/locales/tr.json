@@ -5,7 +5,7 @@
     "contact": "İletişim"
   },
   "hero": {
-    "bio": "4+ yıldır web geliştiriyorum. Arayüzden API'ya, veritabanından yayına kadar işin her katmanıyla uğraşmayı seviyorum. En keyifli kısmı da bir fikri gerçekten çalışan bir ürüne dönüştürmek.",
+    "bio": "4+ yıldır web geliştiriyorum. Arayüzden API'ya, veritabanından yayına kadar işin her katmanıyla uğraşmayı seviyorum.",
     "cv": "CV indir",
     "location": "Balıkesir, Türkiye"
   },
@@ -18,7 +18,7 @@
   "jobs": {
     "apprecode": {
       "dates": "2024 — Bugün",
-      "desc": "Nuxt 3/4 ile CRM, yatırım back-office ve dashboard uygulamaları; ECharts, Highcharts ve TradingView ile gelişmiş veri görselleştirme."
+      "desc": "Vue/Nuxt ile CRM, yatırım back-office ve dashboard uygulamaları; ECharts, Highcharts ve TradingView ile gelişmiş veri görselleştirme."
     },
     "madde22": {
       "dates": "2023 — 2024",
@@ -31,7 +31,9 @@
   },
   "education": {
     "school": "Balıkesir Üniversitesi",
-    "degree": "Bilgisayar Mühendisliği (Lisans)"
+    "degree": "Bilgisayar Mühendisliği (Lisans)",
+    "highSchool": "Balıkesir Anadolu Lisesi",
+    "highSchoolDegree": "Lise"
   },
   "languages": {
     "turkish": "Türkçe",

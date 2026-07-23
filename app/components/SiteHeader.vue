@@ -10,21 +10,6 @@ const { locale, setLocale } = useI18n()
       class="text-[15px] font-bold hover:text-primary"
     >ayb<span class="text-primary">.</span></ULink>
     <nav class="flex flex-wrap items-center justify-end gap-5.5 text-[13.5px] text-muted max-sm:gap-3">
-      <ULink
-        raw
-        href="#deneyim"
-        class="hover:text-primary"
-      >{{ $t('nav.experience') }}</ULink>
-      <ULink
-        raw
-        href="#yetenekler"
-        class="hover:text-primary"
-      >{{ $t('nav.skills') }}</ULink>
-      <ULink
-        raw
-        href="#iletisim"
-        class="hover:text-primary"
-      >{{ $t('nav.contact') }}</ULink>
       <div
         role="group"
         :aria-label="$t('langLabel')"

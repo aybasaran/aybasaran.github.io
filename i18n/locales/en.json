@@ -5,7 +5,7 @@
     "contact": "Contact"
   },
   "hero": {
-    "bio": "I've been building for the web for 4+ years. I like getting my hands on every layer, from the UI to APIs to the database. The best part is still turning an idea into something that actually works.",
+    "bio": "I've been building for the web for 4+ years. I like getting my hands on every layer, from the UI to APIs to the database.",
     "cv": "Download CV",
     "location": "Balıkesir, Türkiye"
   },
@@ -18,7 +18,7 @@
   "jobs": {
     "apprecode": {
       "dates": "2024 — Present",
-      "desc": "CRM, investment back-office and dashboard apps with Nuxt 3/4; advanced data visualization with ECharts, Highcharts and TradingView."
+      "desc": "CRM, investment back-office and dashboard apps with Vue/Nuxt; advanced data visualization with ECharts, Highcharts and TradingView."
     },
     "madde22": {
       "dates": "2023 — 2024",
@@ -31,7 +31,9 @@
   },
   "education": {
     "school": "Balıkesir University",
-    "degree": "B.Sc. Computer Engineering"
+    "degree": "B.Sc. Computer Engineering",
+    "highSchool": "Balıkesir Anatolian High School",
+    "highSchoolDegree": "High School"
   },
   "languages": {
     "turkish": "Turkish",
