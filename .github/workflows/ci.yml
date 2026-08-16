@@ -22,28 +22,18 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm lint
       - run: pnpm typecheck
-
-  build:
-    if: github.ref == 'refs/heads/main'
-    needs: ci
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v5
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v5
-        with:
-          node-version: 24
-          cache: pnpm
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm generate
+      - if: github.ref == 'refs/heads/main'
+        run: pnpm generate
         env:
           NITRO_PRESET: github_pages
-      - uses: actions/upload-pages-artifact@v3
+      - if: github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
         with:
           path: .output/public
 
   deploy:
-    needs: build
+    if: github.ref == 'refs/heads/main'
+    needs: ci
     runs-on: ubuntu-latest
     permissions:
       pages: write

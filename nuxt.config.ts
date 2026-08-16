@@ -6,16 +6,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n'
   ],
 
-  devtools: {
-    enabled: true
-  },
-
   css: ['~/assets/css/main.css'],
-
-  routeRules: {
-    '/': { prerender: true },
-    '/en/': { prerender: true }
-  },
 
   compatibilityDate: '2026-06-30',
 
@@ -40,13 +31,8 @@ export default defineNuxtConfig({
     strategy: 'prefix_except_default',
     trailingSlash: true,
     locales: [
-      { code: 'tr', language: 'tr-TR', name: 'Türkçe', file: 'tr.json' },
-      { code: 'en', language: 'en-US', name: 'English', file: 'en.json' }
-    ],
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      redirectOn: 'root'
-    }
+      { code: 'tr', language: 'tr-TR', file: 'tr.json' },
+      { code: 'en', language: 'en-US', file: 'en.json' }
+    ]
   }
 })

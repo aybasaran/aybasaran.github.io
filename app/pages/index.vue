@@ -19,10 +19,18 @@ const jobs = [
     projects: ['Turkey Tour Organizer', 'Estetic Hair Turkey']
   }
 ]
+
+const socials = [
+  { label: 'GitHub', to: 'https://github.com/aybasaran', handle: 'github.com/aybasaran' },
+  { label: 'LinkedIn', to: 'https://linkedin.com/in/aybasaran', handle: 'in/aybasaran' },
+  { label: 'Instagram', to: 'https://www.instagram.com/aybasaran10', handle: '@aybasaran' }
+]
+
+const skills = ['Vue / Nuxt', 'TypeScript', 'Node.js', 'NestJS', 'Python', 'Django', 'Go', 'PostgreSQL', 'Redis', 'TailwindCSS', 'Docker', 'Terraform', 'Google Cloud', 'ESPHome / IoT', 'Homelab & Self-hosting']
 </script>
 
 <template>
-  <UContainer class="px-8 max-sm:px-6 sm:px-8">
+  <UContainer class="px-6 sm:px-8">
     <SiteHeader />
 
     <main>
@@ -52,22 +60,15 @@ const jobs = [
               {{ $t('hero.cv') }} <span aria-hidden="true">↓</span>
             </UButton>
             <UButton
-              to="https://github.com/aybasaran"
+              v-for="s in socials.slice(0, 2)"
+              :key="s.to"
+              :to="s.to"
               target="_blank"
               color="neutral"
               variant="outline"
               class="rounded-lg bg-elevated px-3.75 py-2.25 text-[13.5px] font-semibold text-default ring-accented hover:text-primary"
             >
-              GitHub <span aria-hidden="true">↗</span>
-            </UButton>
-            <UButton
-              to="https://linkedin.com/in/aybasaran"
-              target="_blank"
-              color="neutral"
-              variant="outline"
-              class="rounded-lg bg-elevated px-3.75 py-2.25 text-[13.5px] font-semibold text-default ring-accented hover:text-primary"
-            >
-              LinkedIn <span aria-hidden="true">↗</span>
+              {{ s.label }} <span aria-hidden="true">↗</span>
             </UButton>
             <span class="text-[13px] text-dimmed"><span aria-hidden="true">◈</span> {{ $t('hero.location') }}</span>
           </div>
@@ -114,6 +115,26 @@ const jobs = [
         </article>
       </section>
 
+      <section
+        id="yetenekler"
+        class="mt-11 scroll-mt-6"
+      >
+        <h2 class="mb-4 text-[11px] font-bold tracking-[0.13em] text-dimmed">
+          {{ $t('sections.skills') }}
+        </h2>
+        <div class="flex flex-wrap gap-2">
+          <UBadge
+            v-for="skill in skills"
+            :key="skill"
+            color="neutral"
+            variant="outline"
+            class="rounded-lg bg-elevated px-3.25 py-1.75 text-[13px] font-semibold text-default ring-default"
+          >
+            {{ skill }}
+          </UBadge>
+        </div>
+      </section>
+
       <div class="mt-11 flex flex-wrap gap-12">
         <section class="min-w-65 flex-1">
           <h2 class="mb-3 text-[11px] font-bold tracking-[0.13em] text-dimmed">
@@ -155,23 +176,13 @@ const jobs = [
       >aybasaran10@gmail.com</ULink>
       <div class="flex gap-4.5">
         <ULink
+          v-for="s in socials"
+          :key="s.to"
           raw
-          to="https://github.com/aybasaran"
+          :to="s.to"
           target="_blank"
           class="hover:text-primary"
-        >github.com/aybasaran</ULink>
-        <ULink
-          raw
-          to="https://linkedin.com/in/aybasaran"
-          target="_blank"
-          class="hover:text-primary"
-        >in/aybasaran</ULink>
-        <ULink
-          raw
-          to="https://www.instagram.com/aybasaran10"
-          target="_blank"
-          class="hover:text-primary"
-        >@aybasaran</ULink>
+        >{{ s.handle }}</ULink>
       </div>
     </footer>
   </UContainer>
